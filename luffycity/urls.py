@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^query/$', views.query),
     url(r'^api/(?P<version>\w+)/', include('api.urls')),
+    url(r'gy/$', views.gy)
 ]

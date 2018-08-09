@@ -62,3 +62,6 @@ def query(request):
         print(obj.get_valid_period_display(), obj.price)
     return HttpResponse('OK', status=200)
 
+
+def gy(request):
+    return HttpResponse(bytes('日本', encoding='utf-8'))
